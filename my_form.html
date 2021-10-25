@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <a href="index.html">Homepage</a>
+    <a href="table.html">Tables</a>
+    <a href= "my_forms.html">Forms</a>
+
+    <form action="thank_you.html" method="get">
+        <h1>Course Sign Up Page</h1>
+        <p>Please Note: First Name, Last Name, Password and Email are required</p>
+        
+        <br>
+        <label for="fname">First Name: </label>
+        <input id="fname" type="text" name=first_name placeholder="First Name" required>
+        
+        <label for="lname">Last Name: </label>
+        <input id="lname" type="text" name=last_name placeholder="Last Name" required>
+        
+        <br>
+        <label for="email">Email: </label>
+        <input id="email" type="email" name=email placeholder="name@email.com" required>
+
+        <label for="password">Password: </label>
+        <input id="password" type="password" name=password required>
+        
+        <br>
+        <p>Are you over the age of 18?</p>
+        
+        <label for="y">Yes</label>
+        <input id="y" type="radio" name="legal_age" value="yes">
+        
+        <label for="n">No</label>
+        <input id="n" type="radio" name="legal_age" value="no">
+
+        <br>
+        <p>Do you have a Credit Card or PayPal?</p>
+        <select name="payment_type">
+            <option value="credit_card">Credit Card</option>
+            <option value="pay_pal">Pay Pal</option>
+        </select>
+        
+        <input id="submit" type="submit" value="Sign Up">
+    </form>
+</body>
+</html>
